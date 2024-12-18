@@ -1,0 +1,183 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #6dd5fa, #2abeb2);
+  color: #333;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+#app {
+  max-width: 70vw;
+  height: 70vh;
+  background: rgb(54, 124, 170);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h2 {
+  font-size: 3rem;
+  margin: 20px 0;
+  color: #333;
+}
+
+p {
+  font-size: 1.5rem; /* Increase size for paragraphs */
+}
+
+.btn {
+  padding: 20px 40px;
+  font-size: 1.5rem;
+  margin: 10px 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.hidden {
+  display: none;
+}
+
+input[type="text"] {
+  padding: 15px;
+  margin: 15px 0;
+  width: 90%;
+  font-size: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+#error-message {
+  color: red;
+  font-size: 14px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+/* Correct and incorrect answer colors */
+.btn.correct {
+  background-color: green;
+  color: white;
+}
+
+.btn.incorrect {
+  background-color: red;
+  color: white;
+}
+
+.btn {
+  font-size: 1.5rem; /* Increase button text size */
+  padding: 15px 30px;
+}
+
+/* Background content */
+#background-content {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#leaderboard-container ul li {
+  font-size: 2rem; /* Increase font size for the username */
+  font-weight: bold; /* Make the username text bold */
+  color: #fff; /* Set a contrasting color for better visibility */
+  margin: 10px 0; /* Add some spacing between leaderboard entries */
+  text-align: center; /* Center-align the username text */
+}
+
+/* Fun facts */
+#fun-facts {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-style: italic;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Floating shapes */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.shape {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  animation: float 6s ease-in-out infinite;
+}
+
+.shape1 {
+  width: 100px;
+  height: 100px;
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.shape2 {
+  width: 150px;
+  height: 150px;
+  top: 50%;
+  right: 15%;
+  animation-delay: 2s;
+}
+
+.shape3 {
+  width: 80px;
+  height: 80px;
+  bottom: 10%;
+  left: 20%;
+  animation-delay: 4s;
+}
+@media (min-width: 1200px) {
+  #app {
+    width: 50vw;
+    height: 60vh;
+  }
+}
+#question-container {
+  font-size: 1.5rem; /* Increase the font size */
+  font-weight: bold; /* Make it bold for emphasis */
+  margin-bottom: 20px; /* Add spacing below the question */
+  text-align: center; /* Center-align the text */
+  color: #fff; /* Optional: Make the text color white for better contrast */
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Interactive Quiz Game</title>
+  </head>
+  <body>
+    <div id="background-content">
+      <h2>Challenge Your Brain!</h2>
+      <p>
+        Fun, engaging quizzes for everyone!
+
+        <img
+          src="OIP.jpg"
+          alt="smiley"
+          style="
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            vertical-align: middle;
+          "
+        />
+      </p>
+    </div>
+    <div id="app">
+      <div id="login-container">
+        <h1>Welcome to the Quiz Game!</h1>
+        <input type="text" id="username" placeholder="Enter your username" />
+        <p id="error-message" class="hidden">
+          Username already exists. Please choose another.
+        </p>
+        <button id="login-button" class="btn">Start Quiz</button>
+      </div>
+
+      <div id="category-container" class="hidden">
+        <h2>Select a Category</h2>
+        <button class="btn category-btn" data-category="9">
+          General Knowledge
+        </button>
+        <button class="btn category-btn" data-category="21">Sports</button>
+        <button class="btn category-btn" data-category="23">History</button>
+        <button class="btn category-btn" data-category="18">Computers</button>
+      </div>
+
+      <div id="quiz-container" class="hidden">
+        <h2 id="category-title"></h2>
+        <div id="question-container"></div>
+        <div id="answer-buttons" class="btn-container"></div>
+      </div>
+
+      <div id="leaderboard-container" class="hidden">
+        <h2>Leaderboard</h2>
+        <ul id="leaderboard"></ul>
+        <button id="play-again-button" class="btn">Play Again</button>
+        <button id="exit-button" class="btn">Exit</button>
+        <button id="reset-button" class="btn">Reset</button>
+      </div>
+    </div>
+    <div id="fun-facts">
+      <p id="fun-fact">"Did you know? Honey never spoils!"</p>
+    </div>
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+    <div class="shape shape3"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
